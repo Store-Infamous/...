@@ -3,19 +3,17 @@ package com.infamous.organsmp;
 import org.bukkit.Material;
 
 public enum OrganType {
-    HEART("Heart", Material.NETHER_WART, "Regeneration"),
-    EYES("Eyes", Material.ENDER_EYE, "Night Vision"),
-    LEGS("Legs", Material.DIAMOND_BOOTS, "Speed"),
-    ARMS("Arms", Material.NETHERITE_SWORD, "Strength"),
-    BRAIN("Brain", Material.CHORUS_FRUIT, "Haste/IQ");
+    HEART("Heart", Material.NETHER_WART),
+    EYES("Eyes", Material.ENDER_EYE),
+    LEGS("Legs", Material.DIAMOND_BOOTS),
+    ARMS("Arms", Material.NETHERITE_SWORD),
+    BRAIN("Brain", Material.CHORUS_FRUIT);
 
     public final String name;
     public final Material icon;
-    public final String buff;
 
-    OrganType(String name, Material icon, String buff) {
+    OrganType(String name, Material icon) {
         this.name = name;
         this.icon = icon;
-        this.buff = buff;
     }
 }
